@@ -95,16 +95,6 @@ This pipeline simulates how a real company can leverage modern data tools to unl
 
 ---
 
-## 📌 Next Steps
-
-- Add **CI/CD** with GitHub Actions  
-- Deploy to **Astronomer Cloud**  
-- Extend with **customer and product dimensional models**
-
----
-
 ✨ This project highlights how a data engineer can turn raw transactional data into **analytics-ready insights** — the kind of pipeline that empowers businesses to make smarter, faster, **data-driven decisions**.
 
-
-## 📂 Project Structure
 
