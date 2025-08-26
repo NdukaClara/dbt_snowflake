@@ -8,7 +8,7 @@ The challenge I posed to myself:
 👉 *If I were the data engineer in charge of powering analytics for this business, how would I design the pipeline?*  
 
 This project answers that question. Using **dbt for transformations and testing**, **Snowflake as the cloud data warehouse**, and **Airflow with Astronomer Cosmos for orchestration**, I built an end-to-end pipeline that:
-- Standardizes raw order data  
+- Standardises raw order data  
 - Applies business logic (e.g., revenue, discounts, order item summaries)  
 - Ensures **data quality with automated tests**  
 - Produces a **fact table** that analysts or BI tools could query to answer key business questions  
@@ -19,9 +19,13 @@ This project answers that question. Using **dbt for transformations and testing*
 
 flowchart TD
     A[Snowflake TPC-H Source Data] --> B[Staging Models (dbt)]
+
     B --> C[Intermediate Models]
+    
     C --> D[Fact Tables & Data Marts]
+    
     D --> E[Testing: Generic + Singular]
+    
     E --> F[Orchestration with Airflow (Cosmos)]
 
 ## 🚀 Features & Workflow
@@ -30,7 +34,7 @@ flowchart TD
    - Snowflake’s **TPC-H** sample dataset (`orders`, `line_items` tables).
 
 2. **Staging Models**  
-   - Clean and standardize raw data.
+   - Clean and standardise raw data.
 
 3. **Intermediate Models**  
    - Combine staging models to build reusable transformations.
