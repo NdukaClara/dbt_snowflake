@@ -17,10 +17,94 @@ This project answers that question. Using **dbt for transformations and testing*
 
 ## 📌 Project Architecture
 
-```mermaid
 flowchart TD
     A[Snowflake TPC-H Source Data] --> B[Staging Models (dbt)]
     B --> C[Intermediate Models]
     C --> D[Fact Tables & Data Marts]
     D --> E[Testing: Generic + Singular]
     E --> F[Orchestration with Airflow (Cosmos)]
+
+## 🚀 Features & Workflow
+
+1. **Data Source**  
+   - Snowflake’s **TPC-H** sample dataset (`orders`, `line_items` tables).
+
+2. **Staging Models**  
+   - Clean and standardize raw data.
+
+3. **Intermediate Models**  
+   - Combine staging models to build reusable transformations.
+
+4. **Fact & Mart Models**  
+   - Business-ready fact table: `fct_orders`.
+
+5. **Testing**  
+   - **Generic tests** → validate schema, nulls, unique IDs.  
+   - **Singular tests** → enforce business rules.
+
+6. **Orchestration**  
+   - Orchestrated using **Airflow (Astronomer Cosmos)**.
+
+7. **Governance**  
+   - Implemented **Snowflake RBAC**.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Snowflake** (Cloud Data Warehouse)  
+- **dbt** (Transformations & Testing)  
+- **Apache Airflow** + **Astronomer Cosmos** (Orchestration)  
+- **VS Code** & **Bash Terminal** (Development)
+
+---
+
+## ⚡ Business Impact
+
+This pipeline simulates how a real company can leverage modern data tools to unlock insights:
+
+- 📈 **Revenue Analysis** — accurate reporting of sales & discounts  
+- 🛒 **Customer Insights** — understand purchasing patterns  
+- 💸 **Profitability Tracking** — measure margins & performance  
+- ✅ **Trusted Data** — quality checks ensure analysts can rely on metrics
+
+---
+
+## 📂 Project Structure
+
+.
+├── dags/                # Airflow DAGs
+├── dbt/                 # dbt project folder
+│   ├── models/          # staging, intermediate, fact models
+│   ├── macros/          # custom dbt macros
+│   └── tests/           # singular tests
+├── requirements.txt     # Python dependencies
+├── Dockerfile           # Airflow runtime image
+└── README.md            # Project documentation
+
+---
+
+## ✅ Summary of Skills Demonstrated
+
+- **Cloud Data Warehousing** (Snowflake)  
+- **Data Modeling & Transformations** (dbt)  
+- **Testing & Data Quality** (dbt tests)  
+- **Workflow Orchestration** (Airflow + Astronomer Cosmos)  
+- **Role-Based Access Control** (Snowflake RBAC)  
+- **End-to-End Pipeline Development & Documentation**  
+
+---
+
+## 📌 Next Steps
+
+- Add **CI/CD** with GitHub Actions  
+- Deploy to **Astronomer Cloud**  
+- Extend with **customer and product dimensional models**
+
+---
+
+✨ This project highlights how a data engineer can turn raw transactional data into **analytics-ready insights** — the kind of pipeline that empowers businesses to make smarter, faster, **data-driven decisions**.
+
+
+## 📂 Project Structure
+
