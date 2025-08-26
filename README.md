@@ -18,6 +18,7 @@ This project answers that question. Using **dbt for transformations and testing*
 ## 📌 Project Architecture
 
 flowchart TD
+
     A[Snowflake TPC-H Source Data] --> B[Staging Models (dbt)]
 
     B --> C[Intermediate Models]
