@@ -74,13 +74,21 @@ This pipeline simulates how a real company can leverage modern data tools to unl
 
 .
 ├── dags/                # Airflow DAGs
+
 ├── dbt/                 # dbt project folder
+
 │   ├── models/          # staging, intermediate, fact models
+
 │   ├── macros/          # custom dbt macros
-│   └── tests/           # singular tests
+
+│   └── tests/           # singular & generic tests
+
 ├── requirements.txt     # Python dependencies
+
 ├── Dockerfile           # Airflow runtime image
+
 └── README.md            # Project documentation
+
 
 ---
 
