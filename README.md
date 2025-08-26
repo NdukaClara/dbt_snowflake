@@ -72,7 +72,7 @@ This pipeline simulates how a real company can leverage modern data tools to unl
 
 ## 📂 Project Structure
 
-.
+
 ├── dags/                # Airflow DAGs
 
 ├── dbt/                 # dbt project folder
